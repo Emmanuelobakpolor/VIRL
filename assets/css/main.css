@@ -1675,7 +1675,7 @@ section,
 .services .service-content .service-action .read-more-btn {
   display: inline-block;
   padding: 8px 16px;
-  background-color: var(--accent-color);
+  background-color: #000000; /* changed from var(--accent-color) to black */
   color: var(--contrast-color);
   border-radius: 5px;
   font-weight: 600;
@@ -1685,6 +1685,7 @@ section,
 
 .services .service-content .service-action .read-more-btn:hover {
   transform: translateX(5px);
+  background-color: #000000; /* changed hover color to black */
 }
 
 .services .service-content .service-action .read-more-btn i {
