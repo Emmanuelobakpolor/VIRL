@@ -373,6 +373,12 @@ h6 {
   --background-color: rgba(244, 239, 237, 0.95);
 }
 
+/* Fix for dark theme header on scroll */
+body.dark-theme.scrolled .header {
+  --background-color: #222222; /* Dark background color for header when scrolled in dark mode */
+  color: var(--contrast-color);
+}
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -3297,4 +3303,26 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+
+#theme-toggle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.0rem;
+  color: var(--default-color);
+}
+
+#theme-toggle i {
+  font-size: 15px;
+}
+
+#theme-text {
+  font-size: 10px;
+  margin-top: 2px;
+  user-select: none;
+  color: var(--default-color);
 }
