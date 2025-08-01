@@ -3125,6 +3125,7 @@ section,
 .service-details .service-content .image-gallery .service-details-slider .swiper-button-prev::after {
   font-size: 16px;
   font-weight: bold;
+  color: #ff0000; /* changed sliding icon color to red */
 }
 
 .service-details .service-content .image-gallery .service-details-slider .swiper-button-next:hover,
