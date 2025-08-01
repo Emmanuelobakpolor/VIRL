@@ -1757,9 +1757,10 @@ section,
 .clients .clients-slide {
   flex: 0 0 auto;
   width: 200px;
-  height: 100px;
+  height: 140px; /* increased height to accommodate text */
   margin: 0 30px;
   display: flex;
+  flex-direction: column; /* stack image and text vertically */
   align-items: center;
   justify-content: center;
   background-color: var(--surface-color);
@@ -1768,6 +1769,21 @@ section,
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+}
+.clients .clients-slide img {
+  max-width: 80%;
+  max-height: 70%; /* reduce height to fit text */
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+.clients .client-text {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: var(--default-color);
+  text-align: center;
+  font-weight: 600;
+  user-select: none;
 }
 
 .clients .clients-slide::before {
@@ -1826,8 +1842,11 @@ section,
 @media (max-width: 991px) {
   .clients .clients-slide {
     width: 180px;
-    height: 90px;
+    height: 120px; /* increased height to fit text */
     margin: 0 20px;
+  }
+  .clients .client-text {
+    font-size: 0.8rem; /* smaller font size for mobile */
   }
 
   @keyframes scroll-left {
@@ -1854,8 +1873,11 @@ section,
 @media (max-width: 767px) {
   .clients .clients-slide {
     width: 150px;
-    height: 75px;
+    height: 110px; /* increased height to fit text */
     margin: 0 15px;
+  }
+  .clients .client-text {
+    font-size: 0.75rem; /* smaller font size for smaller mobile */
   }
 
   @keyframes scroll-left {
@@ -3125,7 +3147,6 @@ section,
 .service-details .service-content .image-gallery .service-details-slider .swiper-button-prev::after {
   font-size: 16px;
   font-weight: bold;
-  color: #ff0000; /* changed sliding icon color to red */
 }
 
 .service-details .service-content .image-gallery .service-details-slider .swiper-button-next:hover,
@@ -3327,4 +3348,113 @@ section,
   margin-top: 2px;
   user-select: none;
   color: var(--default-color);
+}
+
+/* Accreditations Section Styling */
+#accreditations {
+  background: #f4f4f4;
+  padding: 60px 0;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  margin-top: 40px;
+  margin-bottom: 20px;
+  transition: box-shadow 0.3s ease;
+}
+
+#accreditations:hover {
+  box-shadow: 0 12px 30px rgba(232, 69, 96, 0.3);
+}
+
+#accreditations .section-title h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #e94560;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  position: relative;
+}
+
+
+
+#accreditations .section-title p {
+  font-size: 1.2rem;
+  color: #6b4c4c;
+  font-weight: 500;
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.accreditations-list {
+  list-style: none;
+  padding: 0;
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.accreditations-list li {
+  font-size: 1.1rem;
+  color: #4a3a3a;
+  padding-left: 40px;
+  position: relative;
+  font-weight: 600;
+  cursor: default;
+  transition: color 0.3s ease;
+}
+
+.accreditations-list li i {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #e94560;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.accreditations-list li:hover {
+  color: #e94560;
+}
+
+.accreditations-list li:hover i {
+  transform: translateY(-50%) scale(1.2);
+}
+
+/* Fade-in animation for the section */
+#accreditations[data-aos] {
+  opacity: 0;
+  transform: translateY(30px);
+  transition-property: opacity, transform;
+  transition-duration: 0.6s;
+  transition-timing-function: ease-out;
+}
+
+#accreditations[data-aos].aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #accreditations {
+    padding: 40px 20px;
+  }
+
+  .accreditations-list {
+    gap: 15px;
+  }
+
+  .accreditations-list li {
+    font-size: 1rem;
+    padding-left: 35px;
+  }
+
+  .accreditations-list li i {
+    font-size: 1.3rem;
+  }
 }

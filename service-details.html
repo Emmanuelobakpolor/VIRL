@@ -113,7 +113,7 @@
       <!-- Theme Toggle Button -->
       <button id="theme-toggle" aria-label="Toggle Dark Mode" style="margin-left: 15px; background: none; border: none; cursor: pointer; font-size: 1.2rem; color: var(--default-color); display: flex; flex-direction: column; align-items: center;">
         <i class="bi bi-moon"></i>
-        <span id="theme-text" style="font-size: 0.75rem; margin-top: 2px; user-select: none; color: var(--default-color);">Light</span>
+        <span id="theme-text" style="font-size: 0.75rem; margin-top: 2px; user-select: none; color: var(--default-color);">Dark</span>
       </button>
 
       <a class="btn-getstarted" href="index.html#about">Go to home</a>
@@ -463,9 +463,8 @@
             </li>
             <li style="margin-bottom: 10px;">
               <a href="javascript:void(0);" onclick="toggleFAQ(1)" style=" text-decoration: none;">Do you provide certification upon completion?</a>
-              <p id="faq1" style="display:none; font-size: 14px;  margin-top: 5px;">Yes, we provide certification from VANESS upon successful completion of our training programs. This
-                    certification validates your skills and knowledge in the respective area many of our programs also
-                    prepare you for industry-recognized certifications</p>
+              <p id="faq1" style="display:none; font-size: 14px;  margin-top: 5px;">Yes, we provide certification from VANESS upon successful completion of our training programs. As Center for Management Development(CMD) accredited and certified consultants, many of our programs also
+                    prepare you for industry-recognized certifications.</p>
             </li>
             <li style="margin-bottom: 10px;">
               <a href="javascript:void(0);" onclick="toggleFAQ(2)" style=" text-decoration: none;">What is your refund and cancellation policy?</a>
@@ -513,13 +512,13 @@
     toggleButton.addEventListener('click', function () {
       body.classList.toggle('dark-theme');
       // Change icon and text
-      if (body.classList.contains('dark-theme')) {
-        toggleButton.querySelector('i').className = 'bi bi-sun';
-        themeText.textContent = 'Dark';
-      } else {
-        toggleButton.querySelector('i').className = 'bi bi-moon';
-        themeText.textContent = 'Light';
-      }
+    if (body.classList.contains('dark-theme')) {
+          toggleButton.querySelector('i').className = 'bi bi-sun ';
+          themeText.textContent = 'Light';
+        } else {
+          toggleButton.querySelector('i').className = 'bi bi-moon';
+          themeText.textContent = 'Dark';
+        }
     });
   });
 </script>
