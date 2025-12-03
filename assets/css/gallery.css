@@ -1,0 +1,11 @@
+/* Gallery image hover effect */
+.gallery-item img {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(122, 16, 16, 0.854);
+  border-radius: 12px;
+}

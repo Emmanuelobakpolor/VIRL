@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Service Details - Scout Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/image.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- Custom CSS for Modal -->
+  <style>
+    .booking-modal .modal-content {
+      background-color: #000000;
+      color: #ffffff;
+      border: 2px solid #ff0000;
+      border-radius: 10px;
+    }
+
+    .booking-modal .modal-header {
+      border-bottom: 1px solid #ff0000;
+    }
+
+    .booking-modal .modal-header .btn-close {
+      filter: invert(1);
+    }
+
+    .booking-modal .modal-title {
+      color: #f1e9e9;
+      font-weight: 700;
+    }
+
+    .booking-modal .form-control {
+      background-color: #1a1a1a;
+      border: 1px solid #ff0000;
+      color: #ffffff;
+    }
+
+    .booking-modal .form-control::placeholder {
+      color: #888888;
+    }
+
+    .booking-modal .form-control:focus {
+      background-color: #1a1a1a;
+      border-color: #ff3333;
+      color: #ffffff;
+      box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+    }
+
+    .booking-modal .form-label {
+      color: #fbf8f8;
+      font-weight: 500;
+    }
+
+    .booking-modal .btn-primary {
+      background-color: #ff0000;
+      border-color: #ff0000;
+      transition: all 0.3s ease;
+    }
+
+    .booking-modal .btn-primary:hover {
+      background-color: #cc0000;
+      border-color: #cc0000;
+    }
+
+    .book-now-btn {
+      background-color: #ff0000;
+      color: #ffffff;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 5px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      margin-top: 20px;
+      display: inline-block;
+    }
+
+    .book-now-btn:hover {
+      background-color: #cc0000;
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+
+<body class="service-details-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+      <a href="index.html" class="me-auto">
+        <img src="assets/img/image.png"  style="width: 160px;" />
+      </a>
+
+      <!-- Theme Toggle Button -->
+      <button id="theme-toggle" aria-label="Toggle Dark Mode" style="margin-left: 15px; background: none; border: none; cursor: pointer; font-size: 1.2rem; color: var(--default-color); display: flex; flex-direction: column; align-items: center;">
+        <i class="bi bi-moon"></i>
+        <span id="theme-text" style="font-size: 0.75rem; margin-top: 2px; user-select: none; color: var(--default-color);">Dark</span>
+      </button>
+
+      <a class="btn-getstarted" href="index.html#about">Go to home</a>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title light-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Service Details</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Service Details</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Service Details Section -->
+    <section id="service-details" class="service-details section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-5">
+          <div class="col-lg-5">
+            <div class="service-sidebar">
+              <div class="service-overview" data-aos="fade-up" data-aos-delay="100">
+                <div class="overview-header">
+                  <i class="bi bi-briefcase-fill"></i>
+                  <h3>Service Overview</h3>
+                </div>
+                <div class="overview-content">
+                  <h2>VANESS Solutions</h2>
+                  <p>delivering world-class training programs designed to transform careers.</p>
+                  <div class="cta-button">
+                  </div>
+                </div>
+              </div>
+              <div class="key-benefits" data-aos="fade-up" data-aos-delay="200">
+                <h4>Key Benefits</h4>
+                <ul>
+                  <li><i class="bi bi-check-circle-fill"></i> Improved employee performance and productivity</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Increased organizational efficiency and competitiveness
+                  </li>
+                  <li><i class="bi bi-check-circle-fill"></i> Enhanced leadership and decision-making capabilities</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Better employee engagement and retention</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Alignment of workforce skills with business goals</li>
+                </ul>
+              </div>
+              <div class="contact-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="contact-header">
+                  <i class="bi bi-headset"></i>
+                  <h4>Need Assistance?</h4>
+                </div>
+                <div class="contact-info">
+                  <div class="info-row">
+                    <i class="bi bi-telephone"></i>
+                    <div>
+                      <span>Call Us</span>
+                      <p><a href="tel:+2348030446066" style="text-decoration: none; color: inherit;">+234 803 044 6066</a></p>
+                    </div>
+                  </div>
+                  <div class="info-row">
+                    <i class="bi bi-envelope"></i>
+                    <div>
+                      <span>Email Us</span>
+          <p><strong>Email:</strong> <span><a href="https://mail.google.com/mail/?view=cm&fs=1&to=vanessintegratedresources@gmail.com" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">vanessintegratedresources@gmail.com</a></span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="service-content">
+              <div class="image-gallery" data-aos="zoom-in" data-aos-delay="100">
+                <div class="service-details-slider swiper init-swiper">
+                  <script type="application/json" class="swiper-config">
+                    {
+                      "loop": true,
+                      "speed": 800,
+                      "autoplay": {
+                        "delay": 5000
+                      },
+                      "slidesPerView": 1,
+                      "effect": "fade",
+                      "navigation": {
+                        "nextEl": ".swiper-button-next",
+                        "prevEl": ".swiper-button-prev"
+                      },
+                      "pagination": {
+                        "el": ".swiper-pagination",
+                        "type": "bullets",
+                        "clickable": true
+                      }
+                    }
+                  </script>
+                  <div class="swiper-wrapper align-items-center">
+                   
+                   
+                    <div class="swiper-slide">
+                      <img src="assets/img/Career growth 2.jpg" alt="" class="img-fluid" loading="lazy">
+                    </div>
+                     <div class="swiper-slide">
+                      <img src="assets/img/services/services-6.webp" alt="" class="img-fluid" loading="lazy">
+                    </div>
+                      <div class="swiper-slide">
+                      <img src="assets/img/Career growth.jpg" alt="" class="img-fluid" loading="lazy">
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+              </div>
+
+              <div class="details-content" data-aos="fade-up" data-aos-delay="200">
+                <div class="section-header">
+                  <h3>How We Drive Career Development and Organizational Growth</h3>
+                  <div class="divider"></div>
+                </div>
+                <p>
+                  VANESS INTEGRATED RESOURCES LTD stands at the forefront of capacity
+                  development by delivering world-class training programs that are both
+                  practical and results-driven. These programs are carefully designed
+                  to bridge skill gaps, enhance professional competencies, and align
+                  individual capabilities with evolving industry demands.
+                </p>
+                <p>
+                  We Provide a diverse range of services designed to help businesses remain competitive,
+                  compliant and forward-thinking in a dynamic global environment
+                </p>
+              </div>
+
+              <div class="service-features" data-aos="fade-up" data-aos-delay="300">
+                <div class="section-header">
+                  <h3>Our Training Services</h3>
+                  <div class="divider"></div>
+                </div>
+                <div class="row g-4">
+                  <div class="col-md-6">
+                    <div class="feature-card">
+                      <div class="icon-wrapper">
+                        <i class="bi bi-people"></i>
+                      </div>
+                      <h4>Management training programs</h4>
+                      <p>Comprehensive programs designed to develop leadership and management skills.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="feature-card">
+                      <div class="icon-wrapper">
+                        <i class="bi bi-bar-chart-line"></i>
+                      </div>
+                      <h4>Capacity building</h4>
+                      <p>Enhancing organizational capabilities to improve performance and sustainability.</p>
+                    </div>
+                  </div>
+                 
+                  <div class="col-md-6">
+                    <div class="feature-card">
+                      <div class="icon-wrapper">
+                        <i class="bi bi-chat-dots"></i>
+                      </div>
+                      <h4>Consultancy services</h4>
+                      <p>Expert advice to help organizations solve challenges and improve processes.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="feature-card">
+                      <div class="icon-wrapper">
+                        <i class="bi bi-globe2"></i>
+                      </div>
+                      <h4> Sustainability and Climate change </h4>
+                      <p>Programs focused on environmental responsibility and sustainable development.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="feature-card">
+                      <div class="icon-wrapper">
+                        <i class="bi bi-tools"></i>
+                      </div>
+                      <h4>Customised solutions</h4>
+                      <p>Tailored training and services to meet specific organizational needs.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="book-now-btn" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Now</button>
+              </div>
+              <div class="implementation-steps" data-aos="fade-up" data-aos-delay="400">
+                <div class="section-header">
+                  <h3>Implementation Process</h3>
+                  <div class="divider"></div>
+                </div>
+                <div class="step-container">
+                  <div class="step">
+                    <span class="step-number">01</span>
+                    <div class="step-content">
+                      <h4>Needs Assessment</h4>
+                      <p>We collaborate with your team to identify skill gaps, training objectives, and organizational
+                        goals.</p>
+                    </div>
+                  </div>
+                  <div class="step">
+                    <span class="step-number">02</span>
+                    <div class="step-content">
+                      <h4>Program Design</h4>
+                      <p>Our experts craft customized training modules tailored to your industry and workforce needs.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="step">
+                    <span class="step-number">03</span>
+                    <div class="step-content">
+                      <h4>Delivery & Facilitation</h4>
+                      <p>Engaging, instructor-led sessions delivered on-site or virtually to ensure effective knowledge
+                        transfer.</p>
+                    </div>
+                  </div>
+                  <div class="step">
+                    <span class="step-number">04</span>
+                    <div class="step-content">
+                      <h4>Evaluation & Support</h4>
+                      <p>We assess learning outcomes and provide ongoing support to maximize the impact of training.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- Booking Modal -->
+              <div class="modal fade booking-modal" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="bookingModalLabel">Book Your Training</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form id="booking-form">
+                        <div class="mb-3">
+                          <label for="fullName" class="form-label">Full Name</label>
+                          <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="email" class="form-label">Email</label>
+                          <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address" required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="phone" class="form-label">Phone Number</label>
+                          <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number" required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="company" class="form-label">Company/Organization</label>
+                          <input type="text" class="form-control" id="company" name="company" placeholder="Enter your company or organization" required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="trainingProgram" class="form-label">Training Program</label>
+                          <select class="form-control" id="trainingProgram" name="trainingProgram" required>
+                            <option value="" disabled selected>Select a training program</option>
+                            <option value="management">Management Training Programs</option>
+                            <option value="capacity">Capacity Building</option>
+                            <option value="consultancy">Consultancy Services</option>
+                            <option value="sustainability"> Sustainability and Climate Change </option>
+                            <option value="custom">Customised Solutions</option>
+                          </select>
+                        </div>
+                        <div class="mb-3">
+                          <label for="date" class="form-label">Preferred Date</label>
+                          <input type="date" class="form-control" id="date" name="date" required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="participants" class="form-label">Number of Participants</label>
+                          <input type="number" class="form-control" id="participants" name="participants" placeholder="Enter number of participants" min="1" required>
+                        </div>
+                       
+                        <div class="mb-3">
+                          <label for="requirements" class="form-label">Special Requirements or Questions</label>
+                          <textarea class="form-control" id="requirements" name="requirements" rows="4" placeholder="Enter any special requirements or questions"></textarea>
+                        </div>
+                        <div class="my-3">
+                          <div class="loading" style="display:none;">Loading...</div>
+                          <div class="error-message" style="display:none;"></div>
+                          <div class="sent-message" style="display:none;">Your booking request has been sent. Thank you!</div>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Submit Booking</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    </section><!-- /Service Details Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+         <a href="index.html" class="me-auto">
+        <img src="assets/img/image.png" style="width: 160px;" />
+      </a>
+          <div class="footer-contact pt-3">
+            <p>11, Adebowale Sebanjo Street</p>
+            <p>Magodo, Shangisha, Lagos</p>
+            <p><strong> Phone:</strong> <a href="tel:+2348030446066" style="text-decoration: none; color: inherit;">+234 803 044 6066</a></p>
+          <p><strong>Email:</strong> <span><a href="https://mail.google.com/mail/?view=cm&fs=1&to=vanessintegratedresources@gmail.com" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">vanessintegratedresources@gmail.com</a></span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+           <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About us</a></li>
+            <li><a href="index.html#services">Services</a></li>
+          
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+         <ul>
+  <li><a href="index.html#services">Management training programs</a></li>
+  <li><a href="index.html#services">Capacity building</a></li>
+  <li><a href="index.html#services">Consultancy services</a></li>
+  <li><a href="index.html#services">sustainability and Climate change </a></li>
+  <li><a href="index.html#services">Customised solutions</a></li>
+</ul>
+        </div>
+        
+       <div class="col-lg-4 col-md-6 footer-links" style=" font-family: Arial, sans-serif;">
+          <h4 style=" font-size: 18px; margin-bottom: 15px;">FAQs</h4>
+          <ul style="list-style: none; padding-left: 0; margin: 0;">
+            <li style="margin-bottom: 10px;">
+              <a href="javascript:void(0);" onclick="toggleFAQ(0)" style=" text-decoration: none;">What training formats do you offer ?</a>
+              <p id="faq0" style="display:none; font-size: 14px;  margin-top: 5px;">We offer in-person training and customized
+                    on-site corporate training  designed to maximize learning outcomes based on your
+                    specific needs and preferences.</p>
+            </li>
+            <li style="margin-bottom: 10px;">
+              <a href="javascript:void(0);" onclick="toggleFAQ(1)" style=" text-decoration: none;">Do you provide certification upon completion?</a>
+              <p id="faq1" style="display:none; font-size: 14px;  margin-top: 5px;">Yes, we provide certification from VANESS upon successful completion of our training programs. As Center for Management Development(CMD) accredited and certified consultants, many of our programs also
+                    prepare you for industry-recognized certifications.</p>
+            </li>
+            <li style="margin-bottom: 10px;">
+              <a href="javascript:void(0);" onclick="toggleFAQ(2)" style=" text-decoration: none;">What is your refund and cancellation policy?</a>
+              <p id="faq2" style="display:none; font-size: 14px;  margin-top: 5px;">We offer a flexible cancellation policy. Full refunds are available up to 14 days before the
+                    training start date. Cancellation within 7-14 days recieve a 50% refund, and those within 7 days
+                    receive a credit for future training programs</p>
+            </li>
+          </ul>
+        </div>
+
+<script>
+  function toggleFAQ(index) {
+    const faq = document.getElementById("faq" + index);
+    faq.style.display = faq.style.display === "none" ? "block" : "none";
+  }
+</script>
+</div>
+      </div>
+    </div>
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename"> VIRL</strong> <span>All Rights Reserved</span></p>
+    
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Removed php-email-form validation script to avoid conflict with EmailJS -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const toggleButton = document.getElementById('theme-toggle');
+    const body = document.body;
+    const themeText = document.getElementById('theme-text');
+    toggleButton.addEventListener('click', function () {
+      body.classList.toggle('dark-theme');
+      // Change icon and text
+    if (body.classList.contains('dark-theme')) {
+          toggleButton.querySelector('i').className = 'bi bi-sun ';
+          themeText.textContent = 'Light';
+        } else {
+          toggleButton.querySelector('i').className = 'bi bi-moon';
+          themeText.textContent = 'Dark';
+        }
+    });
+  });
+</script>
+  <!-- EmailJS SDK -->
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function(){
+      emailjs.init("AxbFu4NHKiakDRKra");
+    })();
+
+    window.onload = function() {
+      const form = document.getElementById('booking-form');
+      const loading = form.querySelector('.loading');
+      const errorMessage = form.querySelector('.error-message');
+      const sentMessage = form.querySelector('.sent-message');
+
+      form.addEventListener('submit', function(event) {
+        event.preventDefault();
+        loading.style.display = 'block';
+        errorMessage.style.display = 'none';
+        sentMessage.style.display = 'none';
+
+        emailjs.sendForm('service_ordpamr', 'template_mfgbopj', this)
+          .then(function() {
+            loading.style.display = 'none';
+            sentMessage.style.display = 'block';
+
+            // Extract form data for calendar event
+            const formData = new FormData(form);
+            const fullName = formData.get('fullName') || 'Training Booking';
+            const trainingProgram = formData.get('trainingProgram') || 'Training Program';
+            const date = formData.get('date');
+            const email = formData.get('email') || '';
+            const company = formData.get('company') || '';
+            const participants = formData.get('participants') || '';
+            const requirements = formData.get('requirements') || '';
+
+            // Construct Google Calendar event URL
+            if (date) {
+              // Format date for Google Calendar (YYYYMMDD)
+              const eventDate = date.replace(/-/g, '');
+              // Event details
+              const title = encodeURIComponent(`${trainingProgram} - ${fullName}`);
+              const details = encodeURIComponent(`Booking for ${trainingProgram}.\nCompany: ${company}\nParticipants: ${participants}\nRequirements: ${requirements}\nContact Email: ${email}`);
+              const calendarUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title}&dates=${eventDate}/${eventDate}&details=${details}`;
+
+              // Open Google Calendar event creation page in new tab
+              window.open(calendarUrl, '_blank');
+            }
+
+            form.reset();
+          }, function(error) {
+            loading.style.display = 'none';
+            errorMessage.style.display = 'block';
+            errorMessage.innerText = 'Failed to send booking request. Please try again later.';
+            console.error('EmailJS error:', error);
+          });
+      });
+    };
+  </script>
+</body>
+
+</html>
