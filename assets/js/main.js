@@ -10,8 +10,21 @@
   "use strict";
 
   /**
-   * Apply .scrolled class to the body as the page is scrolled down
+   * Dismiss preloader once page is ready
    */
+  window.addEventListener('load', function() {
+    const preloader = document.getElementById('preloader');
+    if (preloader) {
+      preloader.classList.add('loaded');
+      setTimeout(() => preloader.remove(), 600);
+    }
+  });
+
+  /**
+   * Apply .scrolled class to the body as the page is scrolled down
+   * Uses requestAnimationFrame for smooth, jank-free scrolling
+   */
+  let scrollTicking = false;
   function toggleScrolled() {
     const selectBody = document.querySelector('body');
     const selectHeader = document.querySelector('#header');
@@ -19,7 +32,15 @@
     window.scrollY > 100 ? selectBody.classList.add('scrolled') : selectBody.classList.remove('scrolled');
   }
 
-  document.addEventListener('scroll', toggleScrolled);
+  document.addEventListener('scroll', function() {
+    if (!scrollTicking) {
+      requestAnimationFrame(function() {
+        toggleScrolled();
+        scrollTicking = false;
+      });
+      scrollTicking = true;
+    }
+  });
   window.addEventListener('load', toggleScrolled);
 
   /**
@@ -86,10 +107,11 @@
    */
   function aosInit() {
     AOS.init({
-      duration: 600,
-      easing: 'ease-in-out',
+      duration: 700,
+      easing: 'ease-out-cubic',
       once: true,
-      mirror: false
+      mirror: false,
+      offset: 80
     });
   }
   window.addEventListener('load', aosInit);
@@ -149,6 +171,7 @@
    * Navmenu Scrollspy
    */
   let navmenulinks = document.querySelectorAll('.navmenu a');
+  let spyTicking = false;
 
   function navmenuScrollspy() {
     navmenulinks.forEach(navmenulink => {
@@ -165,6 +188,14 @@
     })
   }
   window.addEventListener('load', navmenuScrollspy);
-  document.addEventListener('scroll', navmenuScrollspy);
+  document.addEventListener('scroll', function() {
+    if (!spyTicking) {
+      requestAnimationFrame(function() {
+        navmenuScrollspy();
+        spyTicking = false;
+      });
+      spyTicking = true;
+    }
+  });
 
 })();
